@@ -31,30 +31,38 @@ function plugin_singlesignon_display_login() {
       echo '</div>';
       ?>
       <style>
-         #display-login .singlesignon-box span {
+         .singlesignon-box {
+            display: flex;
+            justify-items: baseline;
+            justify-content: center;
+         }
+
+         .singlesignon-box span {
             display: inline-block;
             margin: 5px;
          }
 
-         #display-login .singlesignon-box .old-login {
+         .singlesignon-box .old-login {
             display: none;
          }
 
-         #boxlogin .singlesignon-box span {
+         .singlesignon-box span {
             display: block;
          }
 
-         #boxlogin .singlesignon-box .vsubmit {
+         .singlesignon-box .vsubmit {
             width: 100%;
             height: 30px;
             font-size: 1.3em !important;
             text-align: center;
             box-sizing: border-box;
          }
-         #boxlogin .singlesignon-box .vsubmit img {
+
+         .singlesignon-box .vsubmit img {
             max-height: 20px;
             max-width: 100px;
             vertical-align: sub;
+            padding-right: 10px;
          }
       </style>
       <script type="text/javascript">
